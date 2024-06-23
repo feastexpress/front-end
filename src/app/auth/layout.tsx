@@ -18,16 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen">
-        <div className="w-7/10 relative">
+        <div className="w-7/10 absolute h-hd">
           <Image
             src={Element}
-            alt="Background"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
+
+            alt="Element"
+            className="object-cover w-[64vw] h-[100vh]"
           />
         </div>
-        <div className="w-3/10">
+        <div className="w-3/10 relative z-50 ">
           {children}
         </div>
       </body>
